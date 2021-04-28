@@ -32,11 +32,9 @@
             this.text_box_token = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new MaterialSkin.Controls.MaterialLabel();
             this.label2 = new MaterialSkin.Controls.MaterialLabel();
-            this.but_form_portfolio = new System.Windows.Forms.Button();
             this.but_stocks = new System.Windows.Forms.Button();
             this.but_bonds = new System.Windows.Forms.Button();
             this.but_etfs = new System.Windows.Forms.Button();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // but_connect
@@ -90,16 +88,7 @@
             this.label2.Size = new System.Drawing.Size(80, 19);
             this.label2.TabIndex = 3;
             this.label2.Text = "Отключён";
-            // 
-            // but_form_portfolio
-            // 
-            this.but_form_portfolio.Location = new System.Drawing.Point(12, 78);
-            this.but_form_portfolio.Name = "but_form_portfolio";
-            this.but_form_portfolio.Size = new System.Drawing.Size(145, 23);
-            this.but_form_portfolio.TabIndex = 4;
-            this.but_form_portfolio.Text = "Портфолио";
-            this.but_form_portfolio.UseVisualStyleBackColor = true;
-            this.but_form_portfolio.Click += new System.EventHandler(this.but_form_portfolio_Click);
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // but_stocks
             // 
@@ -131,27 +120,13 @@
             this.but_etfs.UseVisualStyleBackColor = true;
             this.but_etfs.Click += new System.EventHandler(this.but_etfs_Click);
             // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(228, 78);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(75, 23);
-            this.materialRaisedButton1.TabIndex = 9;
-            this.materialRaisedButton1.Text = "materialRaisedButton1";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(650, 315);
-            this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.but_etfs);
             this.Controls.Add(this.but_bonds);
             this.Controls.Add(this.but_stocks);
-            this.Controls.Add(this.but_form_portfolio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.text_box_token);
@@ -169,11 +144,9 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField text_box_token;
         private MaterialSkin.Controls.MaterialLabel label1;
         private MaterialSkin.Controls.MaterialLabel label2;
-        private System.Windows.Forms.Button but_form_portfolio;
         private System.Windows.Forms.Button but_stocks;
         private System.Windows.Forms.Button but_bonds;
         private System.Windows.Forms.Button but_etfs;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }
 
